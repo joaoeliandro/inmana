@@ -10,12 +10,12 @@ defmodule Inmana.Welcomer do
   end
 
   defp evaluate("lindo", 42) do
-    "You are very special my darling!"
+    {:ok, "You are very special my darling!"}
   end
 
   defp evaluate(name, age) when age >= 18 do
-    "Welcome #{name}"
+    {:ok, "Welcome #{name}"}
   end
 
-  defp evaluate(_name, _age), do: "You shall not pass!"
+  defp evaluate(_name, _age), do: {:error, "You shall not pass!"}
 end
