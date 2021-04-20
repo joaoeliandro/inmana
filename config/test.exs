@@ -8,6 +8,7 @@ use Mix.Config
 config :inmana, Inmana.Repo,
   username: "postgres",
   password: "postgres",
+  port: 5433,
   database: "inmana_test#{System.get_env("MIX_TEST_PARTITION")}",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox

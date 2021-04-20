@@ -4,6 +4,7 @@ use Mix.Config
 config :inmana, Inmana.Repo,
   username: "postgres",
   password: "postgres",
+  port: 5433,
   database: "inmana_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
