@@ -6,7 +6,6 @@ defmodule Inmana.Welcomer do
     |> String.trim()
     |> String.downcase()
     |> evaluate(age)
-
   end
 
   defp evaluate("lindo", 42) do
