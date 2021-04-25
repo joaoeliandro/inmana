@@ -28,6 +28,8 @@ defmodule Inmana.Supplies.Scheduler do
 
   defp schedule_notification do
     # Send weekly email report
-    Process.send_after(self(), :generate, 1000 * 10 * 6 * 60 * 24 * 7)
+    Process.send_after(self(), :generate, 1000 * 10)
+
+    # Process.send_after(self(), :generate, 1000 * 10 * 6 * 60 * 24 * 7) to send emails every weeak
   end
 end
