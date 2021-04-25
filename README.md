@@ -1,4 +1,5 @@
 <h1 align="center">
+    <img  alt="Inmana-logo" src="inmana.png">
     <br>
     Inmana
     <br>
@@ -34,6 +35,7 @@
 <p align="center">
   <a href="#octocat-the-project">The Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#information_source-how-to-use">How to use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-license">License</a>
 </p>
 
@@ -68,6 +70,30 @@ the solution is developed with the technologies below:
 > - [Bamboo][Bamboo]
 > - [Docker](https://www.docker.com/)
 > - [VS Code](https://code.visualstudio.com/)
+
+## :information_source: How to Use
+
+To clone and run this application, you'll need Git, Elixir v1.7 or higher installed on your computer and the [Inmana](https://github.com/joaoeliandro/inmana.git).
+
+In your terminal:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/joaoeliandro/inmana.git
+
+# Go into the repository
+$ cd inmana
+
+# Install dependencies for the Elixir api
+$ mix deps.get
+
+#if your postgresql is installed correctly, type
+#Create Database and migrations
+$ mix ecto.setup
+
+# Execute and use the route Ex.: (http://localhost:4000/)
+$ mix phx.server
+```
 
 ## :memo: License
 
