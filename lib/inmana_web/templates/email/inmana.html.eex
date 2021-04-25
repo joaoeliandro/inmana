@@ -1,0 +1,3 @@
+<p><%= @supply.description %></p>
+<p><%= @supply.expiration_date %></p>
+<p><%= @supply.responsible %></p>
